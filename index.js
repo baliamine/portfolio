@@ -89,3 +89,11 @@ window.onload = function () {
     popup.style.display = "none";
   });
 };
+function download() {
+  const resumeUrl = 'MedAmineBALI-CV.pdf';
+  const link = document.createElement('a');
+  link.href = resumeUrl;
+  link.download = 'MedAmineBALI-CV.pdf'; // You can specify the download file name
+  link.click();
+}
+

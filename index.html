@@ -80,6 +80,15 @@
             working independently🏋️‍♀️.
           </p>
         </div>
+        <div class="resume-cv">
+          <h1 class="title" id="resume">
+            Med Amine <b class="word">RESUME</b>
+          </h1>
+          <p class="download">Click here to download my resume in PDF format</p>
+          <button class="download-btn" onclick="download()">
+            Download now ->
+          </button>
+        </div>
 
         <h2 class="title-section">My Skills</h2>
         <div class="skills-description">
@@ -312,9 +321,7 @@
           >
         </div>
         <h3 class="style-html">
-          My
-          journey with red crescent local committee la Goulette
-          
+          My journey with red crescent local committee la Goulette
         </h3>
         <p class="intro-resume">
           First here is an introduction to learn more about red crescent
@@ -346,45 +353,64 @@
       <section id="Contact">
         <h1 class="title">Contact <b class="word">Me!</b></h1>
       </section>
-<div class="container-form">
-      <form class="style-footer" onsubmit="return validateForm(this)" novalidate>
-        <input
-          class="input-form"
-          type="text"
-          name="number"
-          placeholder="Write your phone number"
-          oninput="validatePhoneNumber(this)"
-        />
-        <div id="phoneNumberE" class="error"></div>
-        <input
-          class="input-form"
-          type="email"
-          name="email"
-          placeholder="Write your email"
-          oninput="validateEmail(this)"
-        />
-        <div id="emailE" class="error"></div>
-        <input
-          class="input-form"
-          name="text"
-          type="text"
-          id="Feedbacks"
-          placeholder="Any Feedbacks?"
-          oninput="validateFeedbacks(this)"
-        />
-        <div id="feedbackE" class="error"></div>
-        <button type="submit">Save</button>
-    </form>
-  </div>
+      <div class="container-form">
+        <form
+          class="style-footer"
+          onsubmit="return validateForm(this)"
+          novalidate
+        >
+          <input
+            class="input-form"
+            type="text"
+            name="number"
+            placeholder="Write your phone number"
+            oninput="validatePhoneNumber(this)"
+          />
+          <div id="phoneNumberE" class="error"></div>
+          <input
+            class="input-form"
+            type="email"
+            name="email"
+            placeholder="Write your email"
+            oninput="validateEmail(this)"
+          />
+          <div id="emailE" class="error"></div>
+          <input
+            class="input-form"
+            name="text"
+            type="text"
+            id="Feedbacks"
+            placeholder="Any Feedbacks?"
+            oninput="validateFeedbacks(this)"
+          />
+          <div id="feedbackE" class="error"></div>
+          <button type="submit">Save</button>
+        </form>
+      </div>
       <footer>
         <div class="container-footer">
-          <img class="logo-footer" src="img/facebook.png" alt="" />
-          <img class="logo-footer" src="img/instagram.png" alt="" />
-          <img class="logo-footer" src="img/linkedin.png" alt="" />
+          <a href="https://www.facebook.com" target="_blank">
+            <img class="logo-footer" src="img/facebook.png" alt="Facebook" />
+          </a>
+          <a href="https://www.instagram.com/_jazzam_amine_/?hl=fr"
+            ><img class="logo-footer" src="img/instagram.png" alt=""
+          /></a>
+          <a href="https://www.linkedin.com/in/med-amine-bali-04452528b/"
+            ><img class="logo-footer" src="img/linkedin.png" alt=""
+          /></a>
         </div>
+        <p
+          style="
+            text-align: center;
+            padding: 10px 0;
+            font-size: 14px;
+            color: #777;
+          "
+        >
+          &copy; 2024 Med Amine. All Rights Reserved.
+        </p>
       </footer>
     </main>
-    <script src="index.js" defer>
-          </script>
+    <script src="index.js" defer></script>
   </body>
 </html>

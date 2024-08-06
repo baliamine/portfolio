@@ -192,8 +192,38 @@
 
 /* style of the about me section */
 #Home {
-  margin-bottom: 5%;
+  margin-bottom: 9%;
 }
+
+#resume {
+  margin-top: -10px;
+}
+.download-btn {
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 500px;
+  border: 1px solid transparent;
+  letter-spacing: 1px;
+  text-align: center;
+  padding: 16px 14px 18px;
+  color: white;
+  background-color: #666666;
+  margin-top: 5px;
+}
+
+.download {
+  margin-bottom: 10px;
+}
+.resume-cv{
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 
 .cv-div {
   display: flex;
@@ -412,9 +442,8 @@
   font-size: 18px;
 }
 
-
-.container-form{
-padding-left: 450px;
+.container-form {
+  padding-left: 450px;
 }
 .style-footer {
   display: flex;
