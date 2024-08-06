@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Med Amine Bali - CV</title>
+    <link rel="stylesheet" href="index.css" />
+    <script
+      src="https://kit.fontawesome.com/3bc7d31a3e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="navbar-content" id="NABAR-Home">
+      <div class="logo-nav">
+        <a href="#My Cv" class="logo-nav"> Med <b class="word">Amine</b></a>
+      </div>
+      <nav class="navbar">
+        <a href="#Home" class="link">Home</a>
+        <a href="#About Me" class="link">About</a>
+        <a href="#projects" class="link">Work</a>
+        <a href="#Resume" class="link">Resume</a>
+        <a href="#Contact" class="link">Contact</a>
+      </nav>
+    </header>
+    <main>
+      <!-- popup  -->
+      <div id="popup" class="popup">
+        <div class="popup-content">
+          <p>Veuillez cocher la case ci-dessous pour continuer</p>
+          <div class="verif-div">
+            <label>
+              <input type="checkbox" id="robotCheckbox" /> Je ne suis pas un
+              robot
+            </label>
+            <button id="closePopup" disabled>Continuer</button>
+          </div>
+        </div>
+      </div>
+      <!-- end pop -->
+
+      <section id="Home">
+        <div class="big-div">
+          <div class="me-div">
+            <div class="intro-div">
+              <h1>Hi, I'm Med Amine Bali</h1>
+              <h3>Junior Web Developper</h3>
+              <p>
+                I'm a Junior Web Developer specializing in front-end
+                technologies, with expertise in React.js. I am dedicated to
+                creating responsive, user-centric interfaces that enhance the
+                user experience.
+              </p>
+            </div>
+
+            <div class="button-div">
+              <button class="btn-1" onclick="scrollToSection('About Me')">
+                More Me
+              </button>
+              <button class="btn-2" onclick="scrollToSection('Contact')">
+                Let's Talk
+              </button>
+            </div>
+          </div>
+          <div class="img-div">
+            <img class="img-dev" src="img/img_me.jpg" alt="none" />
+          </div>
+        </div>
+      </section>
+      <section id="About Me">
+        <h1 class="title">About <b class="word"> Me</b></h1>
+        <div class="cv-div">
+          <img src="img/profil.jpg" alt="" />
+          <h3>Junior Web Developper</h3>
+          <p>
+            Hi ! Im an IoT student and junior web developer👨‍💻, I specialize in
+            network hardware and software, focusing on practical applications
+            and effective solutions💡. This background equips me to tackle
+            complex, multidisciplinary projects with versatility and
+            adaptability.With advanced analytical skills and exceptional
+            problem-solving abilities🔍, I excel both in team settings 🤝 and
+            working independently🏋️‍♀️.
+          </p>
+        </div>
+
+        <h2 class="title-section">My Skills</h2>
+        <div class="skills-description">
+          <p>
+            As a passionate web developer, I specialize in crafting interactive
+            and visually appealing web experiences using core technologies such
+            as JavaScript, HTML, and CSS. With a strong understanding of these
+            fundamental tools, I focus on building responsive and dynamic
+            websites that deliver excellent user experiences.
+          </p>
+        </div>
+
+        <div class="container-about-me-section">
+          <div class="card" style="width: 18rem">
+            <img src="/img/html.png" class="card-img-top" alt="none" />
+            <div class="card-body">
+              <h5 class="card-title">HTML</h5>
+              <p class="card-text">
+                HTML is the foundation of web development, structuring content
+                for websites and applications. With a deep understanding of
+                HTML, I ensure that web pages are well-organized, semantic, and
+                accessible.
+              </p>
+              <a
+                href="https://www.w3schools.com/html/"
+                class="btn btn-primary"
+                target="_blank"
+                >More</a
+              >
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem">
+            <img src="/img/css.png" class="card-img-top" alt="none" />
+            <div class="card-body">
+              <h5 class="card-title">CSS</h5>
+              <p class="card-text">
+                CSS is essential for styling and layout, bringing design to life
+                by controlling the visual presentation of websites. I use CSS to
+                create responsive, visually appealing interfaces that adapt
+                seamlessly to different devices and screen sizes.
+              </p>
+              <a
+                href="https://www.w3schools.com/css/"
+                class="btn btn-primary"
+                target="_blank"
+                >More</a
+              >
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem">
+            <img src="/img/js.png" class="card-img-top" alt="none" />
+            <div class="card-body">
+              <h5 class="card-title">JavaScript</h5>
+              <p class="card-text">
+                JavaScript adds interactivity and functionality to web pages,
+                enabling dynamic user experiences. My skills in JavaScript allow
+                me to build interactive features and create smooth, engaging
+                interfaces that enhance user engagement.
+              </p>
+              <a
+                href="https://www.w3schools.com/Js/"
+                class="btn btn-primary"
+                target="_blank"
+                >More</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <h2 class="title-section-project" id="projects">My Project</h2>
+        <div class="skills-description">
+          <p>
+            I specialize in developing software solutions that are both
+            innovative and user-friendly. My projects reflect my skills in web
+            development, mobile apps, and software engineering, showcasing a
+            strong commitment to clean code and modern design.
+          </p>
+        </div>
+
+        <div class="container-about-me-section">
+          <div class="card" style="width: 18rem">
+            <img src="/img/event.jpeg" class="card-img-top" alt="none" />
+            <div class="card-body">
+              <h5 class="card-title">EventFusion</h5>
+              <p class="card-text">
+                A comprehensive event management tool that simplifies
+                coordination and communication for organizers and participants.
+                It features scheduling, registration, and real-time updates to
+                streamline event planning.
+              </p>
+              <a
+                href="https://github.com/WaelMbarki/EVENTFUSION"
+                class="btn btn-primary"
+                target="_blank"
+              >
+                GitHub
+              </a>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem">
+            <img src="/img/fashionn.jpg" class="card-img-top" alt="none" />
+            <div class="card-body">
+              <h5 class="card-title">FashIN</h5>
+              <p class="card-text">
+                A dynamic web platform crafted for fashion enthusiasts to stay
+                updated with the latest trends and styles. It provides a
+                sophisticated interface that enhances the browsing experience,
+                making it easy for users to discover fashion content.
+              </p>
+              <a
+                href="https://github.com/baliamine/projet-final.git"
+                class="btn btn-primary"
+                target="_blank"
+                >GitHub</a
+              >
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem">
+            <img src="/img/movies.jpg" class="card-img-top" alt="none" />
+            <div class="card-body">
+              <h5 class="card-title">Movies</h5>
+              <p class="card-text">
+                A mobile app that provides an intuitive interface for
+                discovering, reviewing, and tracking movies. It delivers a
+                personalized experience for film enthusiasts to stay updated
+                with the latest releases and enjoy their favorite content.
+              </p>
+              <a
+                href="https://www.netflix.com/browse/genre/34399"
+                class="btn btn-primary"
+                target="_blank"
+                >GitHub</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="Resume">
+        <h1 class="title">Career <b class="word"> Summary</b></h1>
+
+        <p class="intro-resume">
+          Im Autonomous, energetic, with enormous sense adaptability and team
+          spirit, a person with a tenacious desire to discover and learn from
+          new technologies.
+        </p>
+
+        <h3 class="style-html">My theater journey</h3>
+        <p class="intro-resume">
+          Now let's take a look bellow here for some of my artistic works
+        </p>
+
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+          <div class="col">
+            <div class="card-resume">
+              <img src="img/to.pjg.jpg" class="card-img-top-resume" alt="..." />
+              <div class="card-body-resume">
+                <h5 class="card-title-resume">"Them"</h5>
+                <p class="card-text-resume">
+                  A dramatic examination of familial discord and hatred. The
+                  play unveils the underlying tensions and conflicts within a
+                  family torn apart by animosity.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card-resume">
+              <img
+                src="img/theatre.jpg"
+                class="card-img-top-resume"
+                alt="..."
+              />
+              <div class="card-body-resume">
+                <h5 class="card-title-resume">"ZINE"</h5>
+                <p class="card-text-resume">
+                  A mystical journey into the world of witchcraft and its
+                  enigmatic practitioners. This work portrays the dark and
+                  intriguing lives of women with supernatural powers.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card-resume">
+              <img src="img/one.jpg" class="card-img-top-resume" alt="..." />
+              <div class="card-body-resume">
+                <h5 class="card-title-resume">"NOUZOUHE"</h5>
+                <p class="card-text-resume">
+                  A poignant exploration of sadness through the life of a woman
+                  grappling with deep emotional turmoil. A powerful narrative
+                  that delves into the complexities of personal suffering.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card-resume">
+              <img
+                src="img/357424598_677360507765929_2842844855824925334_n.jpg"
+                class="card-img-top-resume"
+                alt="..."
+              />
+              <div class="card-body-resume">
+                <h5 class="card-title-resume">"MirrorPhobia"</h5>
+                <p class="card-text-resume">
+                  An unsettling portrayal of a character's intense fear of
+                  mirrors. This piece vividly captures the psychological
+                  struggle with self-image and reflection.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="style-link">
+          <p>
+            Here this is the link of a facebook video containing part of my
+            theatrical piece :
+          </p>
+          <a
+            style="text-decoration: none"
+            target="_blank"
+            href="https://www.facebook.com/100059528075663/videos/153414889986113"
+            >Theatrical piece</a
+          >
+        </div>
+        <h3 class="style-html">
+          My
+          journey with red crescent local committee la Goulette
+          
+        </h3>
+        <p class="intro-resume">
+          First here is an introduction to learn more about red crescent
+        </p>
+        <iframe
+          width="900"
+          height="500"
+          class="iframe"
+          src="https://www.youtube.com/embed/kBTeRE-j1Js"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+        <div class="style-link">
+          <p>
+            Here is the link of our Page on Facebok of red crescent local
+            committee la Goulette so you will find our charity works
+          </p>
+
+          <a
+            target="_blank"
+            href="https://www.facebook.com/crt.la.goulette "
+            style="text-decoration: none"
+            >Red crescent local committee La Goulette</a
+          >
+        </div>
+      </section>
+      <section id="Contact">
+        <h1 class="title">Contact <b class="word">Me!</b></h1>
+      </section>
+<div class="container-form">
+      <form class="style-footer" onsubmit="return validateForm(this)" novalidate>
+        <input
+          class="input-form"
+          type="text"
+          name="number"
+          placeholder="Write your phone number"
+          oninput="validatePhoneNumber(this)"
+        />
+        <div id="phoneNumberE" class="error"></div>
+        <input
+          class="input-form"
+          type="email"
+          name="email"
+          placeholder="Write your email"
+          oninput="validateEmail(this)"
+        />
+        <div id="emailE" class="error"></div>
+        <input
+          class="input-form"
+          name="text"
+          type="text"
+          id="Feedbacks"
+          placeholder="Any Feedbacks?"
+          oninput="validateFeedbacks(this)"
+        />
+        <div id="feedbackE" class="error"></div>
+        <button type="submit">Save</button>
+    </form>
+  </div>
+      <footer>
+        <div class="container-footer">
+          <img class="logo-footer" src="img/facebook.png" alt="" />
+          <img class="logo-footer" src="img/instagram.png" alt="" />
+          <img class="logo-footer" src="img/linkedin.png" alt="" />
+        </div>
+      </footer>
+    </main>
+    <script src="index.js" defer>
+          </script>
+  </body>
+</html>

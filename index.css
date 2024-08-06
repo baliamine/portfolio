@@ -1,0 +1,520 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.popup {
+  display: none; /* Initially hide the pop-up */
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+}
+
+.popup-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+.popup-content p {
+  margin-bottom: 15px;
+}
+
+#closePopup {
+  padding: 10px 10px;
+  cursor: pointer;
+  margin-left: 15px;
+  background-color: #666666;
+  border: none;
+  border-radius: 8px;
+  box-sizing: border-box;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
+    "Helvetica Neue", sans-serif;
+  outline: none;
+  color: white;
+}
+
+#closePopup:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.verif-div {
+  border: 1px #666666;
+  border-style: outset;
+  padding: 10px;
+}
+/* style of navbar */
+.navbar-content {
+  margin-bottom: 2%;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  width: 35%;
+  height: 50px;
+}
+.link {
+  color: #666666;
+  font-size: large;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-decoration: none;
+  padding-top: 15px;
+  text-align: center;
+  width: 80px;
+  height: 50px;
+  margin-right: 40px;
+}
+.link:hover {
+  cursor: pointer;
+  color: #afafaf;
+}
+
+.logo-nav {
+  color: black;
+  letter-spacing: 7px;
+  font-size: 38px;
+  margin-top: 4px;
+  text-decoration: none;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", bold;
+  margin-left: 20px;
+}
+
+/* style home  */
+.big-div {
+  display: flex;
+  justify-content: space-between;
+}
+.img-div {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 50px;
+  padding-top: 20px;
+}
+.img-dev {
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+  width: 100%;
+}
+.me-div {
+  margin-left: 120px;
+}
+
+.intro-div {
+  width: 70%;
+  margin-top: 150px;
+  line-height: 1.6;
+  font-size: 20px;
+}
+.intro-div p {
+  margin-top: 6px;
+  margin-bottom: 20px;
+  font-size: 0.97em;
+  color: #666666;
+  line-height: 1.4;
+}
+
+.btn-1 {
+  background-color: #666666;
+  border: none;
+  border-radius: 8px;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
+    "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  margin: 0;
+  outline: none;
+  padding: 13px 23px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  width: auto;
+  color: white;
+}
+.btn-2 {
+  border: none;
+  border-radius: 8px;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
+    "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  margin: 0;
+  outline: none;
+  padding: 13px 23px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  width: auto;
+  color: #666666;
+  background-color: white !important;
+  border: 1px solid #222222;
+}
+.button-div {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  width: 36%;
+}
+
+/* style of title  */
+.title {
+  letter-spacing: 2px;
+  margin-top: 50px;
+  text-align: center;
+  font-size: 32px;
+  padding-bottom: 25px;
+}
+.word {
+  color: #666666;
+}
+
+/* style of the about me section */
+#Home {
+  margin-bottom: 5%;
+}
+
+.cv-div {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 70%;
+  margin: 0 auto;
+  margin-top: -10px;
+}
+
+.cv-div img {
+  border-radius: 50%;
+  width: 180px;
+  height: 180px;
+}
+
+.cv-div h3 {
+  margin: 0;
+  font-size: 24px;
+  margin-top: 40px;
+}
+
+.cv-div p {
+  line-height: 1.6;
+  text-align: center;
+  margin-top: 20px;
+  padding-bottom: 35px;
+}
+
+/* style of about section*/
+
+.container-about-me-section {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  padding-left: 160px;
+}
+.title-section {
+  padding-bottom: 20px;
+  text-align: center;
+}
+.skills-description {
+  margin-bottom: 2rem;
+  padding-left: 260px;
+}
+
+.skills-description p {
+  font-size: 1.125rem;
+  color: #333;
+  line-height: 1.6;
+  width: 70%;
+  text-align: center;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  max-width: 18rem;
+  margin: 1rem;
+  padding-top: 10px;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 40%;
+  align-items: center;
+}
+
+.card-body {
+  padding: 1rem;
+  text-align: center;
+}
+
+.card-title {
+  margin-bottom: 0.75rem;
+  font-size: 1.25rem;
+  color: #333;
+}
+
+.card-text {
+  margin-bottom: 1rem;
+  color: #666;
+  padding-bottom: 10px;
+}
+
+.btn-primary {
+  border: none;
+  background-color: #666666;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+
+.card:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  transform: translateY(-4px);
+}
+
+.title-section-project {
+  margin-top: 50px;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/* resume section */
+.row-cols-md-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  padding: 20px;
+  justify-content: center;
+}
+
+.card-resume {
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-img-top-resume {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.card-resume:hover .card-img-top-resume {
+  transform: scale(1.05);
+}
+
+.card-body-resume {
+  padding: 15px;
+  background-color: #fff;
+}
+
+.card-title-resume {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.card-text-resume {
+  font-size: 14px;
+  color: #666;
+}
+
+.intro-resume {
+  font-size: 1.125rem;
+  color: #333;
+  line-height: 1.6;
+  text-align: center;
+}
+.style-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 16px;
+  padding: 20px 0;
+}
+
+.style-link a {
+  color: #666666;
+  text-decoration: none;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.style-link a:hover {
+  color: #666666be;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.style-html {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 24px;
+}
+
+.iframe {
+  display: block;
+  margin: 20px auto;
+  border: 0;
+}
+
+.style-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+/* contact page  */
+.style-contact div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 800px;
+  padding: 0 2%;
+}
+
+.style-contact div p {
+  margin: 8px 0;
+  color: #333;
+  font-size: 18px;
+}
+
+
+.container-form{
+padding-left: 450px;
+}
+.style-footer {
+  display: flex;
+  flex-direction: column;
+  margin-right: 170px;
+  padding: 20px;
+  margin-top: -9px;
+}
+
+.input-form {
+  margin: 10px 0;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 8px;
+  height: 45px;
+  border: 1px solid #ccc;
+  padding: 0 15px;
+  font-size: 16px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input-form::placeholder {
+  color: #888;
+  font-size: 16px;
+}
+
+.input-form:focus {
+  border-color: #666666;
+}
+#Feedbacks {
+  height: 150px;
+}
+
+.style-footer button {
+  border: none;
+  border-radius: 8px;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
+    "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  /* margin: 0; */
+  outline: none;
+  padding: 13px 23px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  width: 100px;
+  color: #666666;
+  margin-top: 20px;
+  margin-left: 21%;
+  background-color: white !important;
+  border: 1px solid #222222;
+  z-index: 1;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+  padding-left: 5px;
+}
+
+/* footer */
+
+footer {
+  background-color: #333;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.container-footer {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.logo-footer {
+  width: 40px;
+  height: auto;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.logo-footer:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  .logo-footer {
+    width: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container-footer {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
