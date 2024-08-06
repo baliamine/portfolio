@@ -55,6 +55,7 @@ function validateForm(form) {
 
   if (isValid) {
     window.location.href = "#NABAR-Home";
+    alert("Thank you 😊 !")
   }
 
   return isValid;
